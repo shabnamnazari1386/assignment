@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Submit a City</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1> Submit a City</h1>
+            <nav>
+                <a href="index.html"> Home </a>
+                <a href="gallery.html"> City Gallery</a>
+                <a href="city.html">City of the Day</a>
+                <a href="submit.html">Submit a City</a>      
+            </nav>
+        </header>
+        <main class="submit-form">
+            <form>
+                <label>Name:<input type="text" name="name"></label>
+                <label> City name:<input type="text" name="city"></label>
+                <label>Write about Cultural Details :<textarea name="details"></textarea></label>
+                <button type="submit">Submit</button>
+            </form>
+        </main>
+        <footer class="main-footer">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <br>
+                    <br>
+                    <div class="footer-socials">
+                        <span class="follow-label">Follow Us on Social Media </span>
+                        <a href="#"><img src="data:image/png;base64,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"></a>
+                        <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgliJ7D4iSASNLkZIMCmN6ulNfLUkjObKbUA&s"></a>
+                        <a href="#"><img src="https://store-images.s-microsoft.com/image/apps.30645.9007199266245907.cb06f1f9-9154-408e-b4ef-d19f2325893b.ac3b465e-4384-42a8-9142-901c0405e1bc"></a>
+                        <a href="#"><img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/YouTube.width-500.format-webp.webp"></a>
+                    </div>
+                    <br>
+                    <div class="footer-contact">
+      </div>
+        <br>
+
+      </div>
+            </div>
+            
+     </footer>
+     <footer class="main-footer">
+        <p>&copy;2025 Explore Afghan Cultures. Contact Us : Google Images  </p>
+    </footer>
+    </body>
+</html>

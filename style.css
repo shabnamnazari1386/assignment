@@ -1,0 +1,197 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+header {
+    background-color: aquamarine;
+    color:black;
+    padding: 1rem;
+    text-align: center;
+}
+nav a {
+    color: blue;
+    margin: 0 15px;
+    text-decoration: none;
+}
+nav a :hover {
+    text-decoration: underline;
+}
+main.home, main.submit-form {
+    text-align: center;
+    padding: 2rem;
+}
+
+h2 {
+    color: black;
+    font-size: medium;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+p {
+    color: black;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 0 1rem;
+    text-align: center;
+}
+quote {
+    font-style: italic;
+    text-align: center;
+    color: black;
+    font-size: 1.2rem;
+    margin: 2rem auto;
+    max-width: 600px;
+    padding: 1rem;
+    border-left: 4px solid ;
+    background-color: aliceblue;
+    border-radius: 8px;
+}
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card :hover {
+    transform: scale(1.03) rotateY(1deg);
+    box-shadow: 0 12px 24px rgba(red, green, blue, alpha);
+    cursor: pointer;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+.card {
+    background-color: aquamarine;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+.carda:hover {
+    transform: scale(1.05);
+    background-color: aliceblue;
+
+}
+.card img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.feature-box {
+    display: flex;
+    background-color: aliceblue;
+    border: 2px solid aquamarine;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.feature-box img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px ;
+    margin-right: 1rem;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    margin: auto; 
+}
+label {
+    margin-bottom: 1rem;
+}
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: border 0.3s ease;
+}
+input:focus, textarea:focus {
+    border: 2px solid aquamarine;
+}
+button {
+    background-color: aquamarine;
+    color:black;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+
+}
+button:hover {
+    background-color: aquamarine;
+}
+.card footer {
+    font-style: normal;
+    color: #444;
+    font-size: medium;
+    text-align: center;
+    margin-top: 12px;
+    padding: 0 10px;
+    position: relative;
+    animation: alternate-reverse 1.5s ease-in-out;
+}
+.card footer::before {
+    content: '"';
+    font-size: 2rem;
+    color: #999;
+    position: absolute;
+    left: 10px ;
+    top: -5px;
+}
+.card footer::after {
+    content: '"';
+    font-size: 2rem;
+    color: #999;
+    position: absolute;
+    right: 10px;
+    bottom: -5px;
+}
+.main-footer p {
+    background-color: aquamarine;
+    color: rgb(red, green, blue);
+    padding: 0.5rem;
+    text-align: center;
+    font-size: medium;
+    margin-top: 3rem;
+}
+.footer-contact  {
+    margin-top: 1rem;
+    color:aquamarine;
+    font-size: medium;
+    text-align: center;
+}
+.footer-contact a {
+    color: blue;
+    text-decoration: none;
+    text-align: center;
+}
+.footer-contact a:hover {
+    text-decoration: underline;
+    text-align: center;
+}
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+.footer-socials a {
+    display: inline-block;
+}
+.footer-socials img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(10px);} 
+    To {opacity: 1; transform: translateY(0);}
+}
+ 
